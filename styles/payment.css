@@ -1,0 +1,19 @@
+.container,
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: lemonchiffon;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.main h1 {
+  margin-top: 20px;
+}
+
+

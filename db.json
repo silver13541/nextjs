@@ -1,0 +1,19 @@
+{
+  "operators": [
+    {
+      "id": "MTC",
+      "name": "MTC",
+      "link_image": "https://media.rabota.ru/processor/logo/original/2019/12/09/mts-roznichnaja-set12-b226d0c6203864e4f050b85ce0006402.jpg"
+    },
+    {
+      "id": "Beeline",
+      "name": "Beeline",
+      "link_image": "https://chastnik.ru/upload/iblock/3ec/3ec8fa5d512b6d24ebd11732cf5d9a5d.jpg"
+    },
+    {
+      "id": "Megafon",
+      "name": "Megafon",
+      "link_image": "http://ladysarafan.ru/wp-content/uploads/2021/01/Fjord-gosinaya-auto_width_1000-2.jpg"
+    }
+  ]
+}

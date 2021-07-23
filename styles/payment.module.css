@@ -1,0 +1,109 @@
+.container,
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: linear-gradient(45deg, #292929 25%, transparent 25%, transparent 75%, #292929 75%), linear-gradient(45deg, #292929 25%, transparent 25%, transparent 75%, #292929 75%) 0.1875em 0.1875em, radial-gradient(at 50% 0, #484847, #090909);
+  background-size: 0.375em 0.375em, 0.375em 0.375em, 100% 100%;
+  min-height: 100vh;
+  min-width: 100vw;
+  
+}
+
+.main {
+  background-color: azure;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 6px 5px azure;
+  max-width: 480px;
+  width: 30%;
+  height:60%;
+}
+
+.main h1 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment_form{
+  margin-top: 5 px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.payment_form span{
+  font-family: Arial, sans-serif;
+}
+
+.payOperatorInput{
+  background-color:inherit;
+  border: 0;
+  height: 30px;
+  border-bottom: 1px grey;
+  border-style: solid;
+  margin-top: 3px;
+  margin-bottom: 7px;
+  width: auto;  
+}
+
+.payOperatorButton{
+  margin-top: 4px;
+  border-width: 1px;  
+  background-color:rgb(255, 255, 184);
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.backButton{
+  margin-right: 10px;
+  padding: 5px;
+  bottom:0;
+  right:0;
+  width: 50px;
+}
+
+.payOperatorInput {
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+}
+ 
+.payOperatorInput::-webkit-outer-spin-button,
+.payOperatorInput::-webkit-inner-spin-button {
+	display: none;
+}
+
+.result_success,.result_error{
+  text-align: center;
+  margin: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.result_success{
+  color: rgb(0, 179, 0);
+}
+
+.result_error{
+  color: red;
+}
+
+@media (max-width: 823px){
+  .main{
+    width: 80%;
+  }
+
+  .backButton{
+      width: 55px;
+  }
+}
+  

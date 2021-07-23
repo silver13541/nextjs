@@ -6,7 +6,8 @@
 }
 
 .container {
-  background-color:burlywood;
+  background: linear-gradient(45deg, #292929 25%, transparent 25%, transparent 75%, #292929 75%), linear-gradient(45deg, #292929 25%, transparent 25%, transparent 75%, #292929 75%) 0.1875em 0.1875em, radial-gradient(at 50% 0, #484847, #090909);
+  background-size: 0.375em 0.375em, 0.375em 0.375em, 100% 100%;
   min-height: 100vh;
   min-width: 100vw;
 }
@@ -15,53 +16,11 @@
   position: relative;
   background-color:azure;
   max-width: 1000px;
-  width: 60%;  
+  width: 45%;  
   height: 60%;
-  padding: 30px;
-}
-
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  padding: 15px;
+  border-radius: 25px;
+  box-shadow: 0 0 3px 5px azure;
 }
 
 .grid {
@@ -70,32 +29,56 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
-  margin-bottom: 3rem;
-  margin-top: 3rem;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 90%;
 }
 
 .card {
+  position: relative;
+  cursor: pointer;
+  display: flex;
   margin: 10px;
-  padding: 1.5rem;
+  padding: 0px;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 0.5px solid black;
+  border-radius: 15px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  width: 45%;
+  box-shadow: 0 0 4px 0px black;
+  transition-duration: .5s;
+  transition-property: background-color;
+}
+
+.addOper{
+  height: 114px;
+  cursor: pointer;
+  display: flex;
+  margin: 10px;
+  padding: 1.13rem;
   text-align: left;
   color: inherit;
   text-decoration: none;
   border: 1px solid black;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  box-shadow: 0 0 4px 0px black;
+  border-radius: 15px;
   width: 45%;
+  transition-duration: .5s;
+  transition-property: background-color;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.addOper:hover,
+.addOper:focus,
+.addOper:active {
+  background-color: rgb(178, 184, 189);
 }
 
 .main h1{
 margin-top:20px;
-font-size: 30px;
+font-size: 2.5rem;
+text-align: center;
 }
 
 .card h2 {
@@ -110,39 +93,34 @@ font-size: 30px;
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 823px) {
+  .main{ 
+    margin: 20px;
+    padding: 20px;
+    width: 70%;
+  }
+
   .grid {
+    margin: 10px;
     width: 100%;
     flex-direction: column;
   }
+  .main h1{
+    margin-top:5px;
+    font-size: 1.7rem;
+    text-align: center;
+    }
+
+  .card,.addOper{
+    width: 70%;
+    margin: 5px;
+  }
+  .addOper{
+    height: 80px;
+  }
 }
 
-.payment_form{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  margin-bottom: 20px;
-}
-
-.payOperatorInput{
-  background-color:aliceblue;
-  border: 1px;
-  border-style: solid;
-  border-color:gray;
-  margin-top: 4px;
-  margin-bottom: 4px;
-}
-
-.payOperatorButton{
-  margin-top: 4px;
-  border-width: 1px;  
-  background-color:beige;
-  height: 30px;
-  border-radius: 5px;
-}
-
-.backButton{
-  margin-top: 20px;
-  bottom:0;
-  right:0;
+.addButton{
+  width: 44px;
+  margin: auto;
 }

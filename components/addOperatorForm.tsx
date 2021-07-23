@@ -8,7 +8,7 @@ const AddOperatorForm = () => {
     const link = useInput('')
     const router = useRouter();
 
-    const Submit = async (e) => {
+    const Submit = async (e: { preventDefault: () => void }) => {
         e.preventDefault()
         await fetch('http://localhost:4200/operators', {
             method: 'POST',

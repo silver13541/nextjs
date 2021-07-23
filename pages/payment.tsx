@@ -1,12 +1,11 @@
-import styles from 'styles/payment.css'
 import Head from 'next/head'
 import Link from 'next/link'
 import styled from 'styled-components'
+import styles from '../styles/Home.module.css'
+import logo from '../images/back.png'
+import Image from 'next/image'
 
 export default function Payment() {
-    const H1 = styled.h1`
-    margin-top: 20px;
-    `;
     return (
        
             <div className={styles.container}>
@@ -16,14 +15,17 @@ export default function Payment() {
                 </Head>
 
                 <main className={styles.main}>
-                    <h1 className={styles.title}>
+                    <h1>
                         Пополнение баланса
                     </h1>
-
-                    <form name="paymentForm">
-
+                    <form name="paymentForm" className={styles.payment_form}>
+                        <span>Номер телефона</span>
+                        <input type="tel" name="tel" pattern="8\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" required placeholder="8(999)999-99-99" className={styles.payOperatorInput} />
+                        <span>Сумма пополнения</span>
+                        <input type="number" min="1" max="1000" required  className={styles.payOperatorInput} value = "0"/>
+                        <button type="submit" className={styles.payOperatorButton}>Оплатить</button>
+                        <Link href={'/'}><a><Image className={styles.backButton} src={logo} alt="backButton"/></a></Link>
                     </form>
-                    
                 </main>
             </div>
        

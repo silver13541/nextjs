@@ -17,7 +17,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Пополнение баланса
         </h1>
-
+        
         <div className={styles.grid}>
           <Link href={'/payment'}><a className={styles.card}>
             <h2>МТС</h2>

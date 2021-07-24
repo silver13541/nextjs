@@ -36,7 +36,7 @@ const Operator = ({ operator }: ISomeInter) => {
 export default Operator
 
 Operator.getInitialProps = async ({ query }: NextPageContext) => {
-    const response = await fetch(`http://localhost:4200/operators/${query.id}`);
+    const response = await fetch(`https://bravedevelopers-operators.herokuapp.com/operators/${query.id}`);
     const operator: IOperator = await response.json();
     return { operator }
 }

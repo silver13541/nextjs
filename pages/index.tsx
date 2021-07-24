@@ -29,7 +29,7 @@ const Home = ({ operators }: IOperatorProps) => {
                             <Operator operator={operator}/>
                         </a>))}
                     <a className={styles.addOper} onClick={() => router.push("/addOper")}>
-                        <input type='image' className={styles.addButton} src='https://icon-library.com/images/add-icon-png/add-icon-png-27.jpg' alt="backButton" />
+                        <input type='image' className={styles.addButton} src='https://icon-library.com/images/add-icon-png/add-icon-png-27.jpg' alt="addButton" />
                     </a>
                 </div>
             </main>

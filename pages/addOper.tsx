@@ -16,7 +16,7 @@ const AddOper = () => {
                 </Head>
                 <main className={styles.main}>
                     <h1>
-                        <input type='image' className={styles.backButton} src='http://cdn.onlinewebfonts.com/svg/img_490217.png' alt="backButton" onClick={() => router.push("/")}></input>
+                        <input type='image' className={styles.backButton} src='http://cdn.onlinewebfonts.com/svg/img_490217.png' alt="backButton" onClick={() => router.push("/")}/>
                         Добавить оператора
                     </h1>
                     <AddOperatorForm />

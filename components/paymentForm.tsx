@@ -13,7 +13,7 @@ const PaymentForm = () => {
 
     const Submit = async (e: { preventDefault: () => void; }) => {
         e.preventDefault()
-        if (Math.floor(Math.random() * 2) == 1) {
+        if (Math.floor(Math.random() * 2) === 1) {
             setResult(true)
             setTimeout(() => router.push('/'), 1500)
         }

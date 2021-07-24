@@ -1,6 +1,6 @@
 import styles from '../styles/payment.module.css'
 
-const ResultPaymentForm = ({ result }) => {
+const ResultPaymentForm = ({ result }:any) => {
 
     return (
         <>

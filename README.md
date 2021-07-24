@@ -32,4 +32,4 @@ function func(s, a, b) {
 }
 ```
 
-Демо приложения:operators-braveds.vercel.app/
+Демо приложения:https://operators-braveds.vercel.app/

@@ -3,6 +3,7 @@ import React from 'react'
 import { IOperator } from '../types/operator';
 import styles from '../styles/operator.module.css'
 
+
 interface OperatorProps {
     operator: IOperator
 }

@@ -56,10 +56,6 @@
   cursor: pointer;
 }
 
-.newOper_form label{
-  font-family: Arial, sans-serif;
-}
-
 .backButton{
   margin-right: 20px;
   padding: 5px;

@@ -19,16 +19,9 @@ function func(s, a, b) {
     i--;
   }
 
-  if (aIndex == -1 && bIndex == -1) {
-    return -1;
-  }
-  else if (aIndex == -1 && bIndex != -1) {
-    return bIndex;
-  }
-  else if (bIndex == -1 && aIndex != -1) {
-    return aIndex;
-  }
-  else return Math.max(aIndex, bIndex);
+  if (aIndex != -1 || bIndex != -1) {
+    return Math.max(aIndex,bIndex);
+  } else return -1;
 }
 ```
 
